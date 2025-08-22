@@ -1,0 +1,144 @@
+* {
+   box-sizing: border-box;
+
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+header {
+    height: 35px;
+    background: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+
+header .menu ul {
+    list-style: none;
+    display: flex;
+}
+
+header .menu ul li {
+    margin: 0 17px;
+}
+
+header .menu ul li a {
+    color: #fff;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+
+header .login ul {
+    list-style: none;
+}
+
+header .login ul li a {
+    color: #fff;
+    font-size: 13px;
+    text-decoration: none;
+}
+.container {
+    display: flex;
+    height: 90vh;
+}
+
+.left {
+    flex: 1;
+    background: #f2f2f2;
+    padding: 10px;
+}
+
+.center {
+    flex: 3;
+    background: #fff;
+    padding: 15px;
+}
+
+.right {
+    flex: 1;
+    background: #f9f9f9;
+    padding: 10px;
+}
+
+.ads {
+    background: #eee;
+    text-align: center;
+    margin: 10px 0;
+    padding: 20px;
+    border-radius: 5px;
+}
+.left a {
+    text-decoration: none;
+    color: blue;
+    display: block;
+    margin: 3px 0;
+    text-align: center;
+}
+
+
+article {
+    background: black;
+    padding: 10px 0;
+    text-align: center;
+}
+
+article ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+}
+
+article li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+article a {
+    text-decoration: none;
+    color: white;
+}
+
+
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .left, .center, .right {
+        flex: none;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    header {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+
+    header .menu ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header .menu ul li {
+        margin: 5px 0;
+    }
+
+    header .login {
+        margin-top: 10px;
+    }
+}
